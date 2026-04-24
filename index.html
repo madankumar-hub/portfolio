@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Madan Kumar - B.Tech CSE (IoT) Student Portfolio | C, C++, JavaScript, HTML & CSS">
+    <title>Madan Kumar | Student Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div id="particles-canvas"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;Dev /&gt;</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🎓 B.Tech CSE (IoT) · 2nd Semester</div>
+            <h1 class="hero-title">
+                <span class="line">Hi, I'm</span>
+                <span class="line gradient-text" id="heroName">Madan Kumar</span>
+            </h1>
+            <p class="hero-subtitle">
+                I build things with <span class="typed-wrapper"><span id="typed-text"></span><span class="cursor">|</span></span>
+            </p>
+            <div class="hero-cta">
+                <a href="#skills" class="btn btn-primary">View My Skills</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="code-title">portfolio.cpp</span>
+                </div>
+                <pre class="code-body"><code><span class="kw">#include</span> <span class="str">&lt;iostream&gt;</span>
+<span class="kw">#include</span> <span class="str">&lt;string&gt;</span>
+
+<span class="kw">class</span> <span class="cls">Student</span> {
+<span class="kw">public</span>:
+    std::string name = <span class="str">"Madan Kumar"</span>;
+    std::string role = <span class="str">"Developer"</span>;
+    
+    <span class="kw">void</span> <span class="fn">introduce</span>() {
+        std::cout << <span class="str">"Welcome to my portfolio!"</span>;
+    }
+};
+
+<span class="kw">int</span> <span class="fn">main</span>() {
+    Student me;
+    me.<span class="fn">introduce</span>();
+    <span class="kw">return</span> <span class="num">0</span>;
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-container">
+            <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a passionate <strong>B.Tech CSE (IoT) student</strong> in my 2nd semester at Poornima Institute of Engineering and Technology, Jaipur. My journey into programming started recently and I'm excited to learn and grow every day.</p>
+                    <p>I'm currently learning <strong>C and C++</strong> for core programming concepts, and building interactive web experiences with <strong>JavaScript, HTML, and CSS</strong>. I'm eager to take on new challenges and build real-world projects.</p>
+                    <p>When I'm not coding, you'll find me exploring new technologies, learning about IoT, and sharpening my problem-solving skills.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🏫</span>
+                            <div>
+                                <strong>Education</strong>
+                                <p>B.Tech CSE (IoT) - PIET, 2nd Sem</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">📍</span>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Jaipur, Rajasthan</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💡</span>
+                            <div>
+                                <strong>Interests</strong>
+                                <p>DSA, Web Dev, IoT, Systems Programming</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="profile.jpg" alt="Madan Kumar" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-container">
+            <h2 class="section-title"><span class="section-number">02.</span> Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="c">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 100 100" class="skill-svg">
+                            <text x="50" y="65" text-anchor="middle" font-size="50" font-weight="bold" fill="url(#grad-c)">C</text>
+                            <defs><linearGradient id="grad-c" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#00599C"/><stop offset="100%" style="stop-color:#4FC3F7"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3>C</h3>
+                    <p>Systems programming, memory management, data structures & algorithms</p>
+                    <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card" data-skill="cpp">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 100 100" class="skill-svg">
+                            <text x="50" y="65" text-anchor="middle" font-size="40" font-weight="bold" fill="url(#grad-cpp)">C++</text>
+                            <defs><linearGradient id="grad-cpp" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#00599C"/><stop offset="100%" style="stop-color:#9C27B0"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3>C++</h3>
+                    <p>OOP, STL, competitive programming, game logic & engine components</p>
+                    <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card" data-skill="js">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 100 100" class="skill-svg">
+                            <text x="50" y="65" text-anchor="middle" font-size="36" font-weight="bold" fill="url(#grad-js)">JS</text>
+                            <defs><linearGradient id="grad-js" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#F7DF1E"/><stop offset="100%" style="stop-color:#FF9800"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>DOM manipulation, async programming, ES6+, interactive web apps</p>
+                    <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card" data-skill="html">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 100 100" class="skill-svg">
+                            <text x="50" y="65" text-anchor="middle" font-size="28" font-weight="bold" fill="url(#grad-html)">HTML</text>
+                            <defs><linearGradient id="grad-html" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#E44D26"/><stop offset="100%" style="stop-color:#F16529"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, SEO best practices, forms & APIs</p>
+                    <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card" data-skill="css">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 100 100" class="skill-svg">
+                            <text x="50" y="65" text-anchor="middle" font-size="30" font-weight="bold" fill="url(#grad-css)">CSS</text>
+                            <defs><linearGradient id="grad-css" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#1572B6"/><stop offset="100%" style="stop-color:#33A9DC"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, animations, responsive design, modern layouts</p>
+                    <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                    <span class="skill-percent">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
+            <h2 class="section-title"><span class="section-number">03.</span> Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's connect!</h3>
+                    <p>I'm currently looking for internship opportunities and open to collaborating on interesting projects. Feel free to reach out!</p>
+                    <div class="contact-links">
+                        <a href="mailto:madanchouhanmadan23@gmail.com" class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>madanchouhanmadan23@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/madan-c-929bb3315" target="_blank" class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <p>linkedin.com/in/madan-c-929bb3315</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/madankumar-hub" target="_blank" class="contact-item">
+                            <span class="contact-icon">🐙</span>
+                            <div>
+                                <strong>GitHub</strong>
+                                <p>github.com/madankumar-hub</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="formName" placeholder=" " required>
+                        <label for="formName">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="formEmail" placeholder=" " required>
+                        <label for="formEmail">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="formMessage" rows="5" placeholder=" " required></textarea>
+                        <label for="formMessage">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        Send Message 🚀
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Designed & Built by <strong>Madan Kumar</strong></p>
+            <p class="footer-sub">Made with ❤️ using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
